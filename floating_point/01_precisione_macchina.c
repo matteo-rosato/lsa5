@@ -88,10 +88,12 @@ void mostra_info_rappresentazione() {
     printf("\n  Epsilon = 2^(-52)");
 
     printf("\n\n  SIGNIFICATO di FLT_DIG = %d:", FLT_DIG);
-    printf("\n  ✓ Con %d cifre decimali puoi DISTINGUERE tutti i float possibili", FLT_DIG);
-    printf("\n    (ogni float ha una rappresentazione decimale univoca a %d cifre)", FLT_DIG);
+    printf("\n  ✓ Con %d cifre decimali significative, QUALSIASI numero decimale", FLT_DIG);
+    printf("\n    può essere arrotondato a float e convertito indietro senza perdita", FLT_DIG);
+    printf("\n    delle %d cifre (round-trip esatto per input decimali)", FLT_DIG);
     printf("\n  ✗ NON significa che tutti i numeri decimali a %d cifre siano esatti", FLT_DIG);
-    printf("\n    (solo alcuni numeri decimali sono rappresentabili esattamente)");
+    printf("\n    (solo alcuni numeri decimali sono rappresentabili esattamente in binario)");
+
 }
 
 
